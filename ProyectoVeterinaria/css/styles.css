@@ -1,13 +1,12 @@
-.boton {
- 
-padding: 10px;
-background-color: #4F0341;
-color: white;
-font-family: Helvetica;
-text-decoration: none;
-font-weight: 400;
-border-radius: 10px;
+*{
+    box-sizing: border-box;
 }
+
+body{
+    margin: 0;
+}
+
+
 
 
   
