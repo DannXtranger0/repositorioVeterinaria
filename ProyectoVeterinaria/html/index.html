@@ -3,110 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Inicio</title>
 </head>
   
-   <header>
-    <div class="logo">
-        <img src="/src/images/logo.png" alt="">
+   <header id="inicio">
+    <div class="logo-container">
+        <img src="/src/images/logo.png" class="logo" alt="">
     </div>
     
     <div class="botones-header">
+            <a href="#" class="boton">
+                <img src="/src/icons/iniciarSesion.png" alt="">
+                <p>Iniciar Sesión</p>
 
-        <button  class="boton1">
-            <img src="/src/icons/iniciarSesion.png" alt="Iniciar Sesion">
-            Iniciar Sesion
-        </button>
-
-        <button class="boton2">
-            <img src="/src/icons/registrar.png" alt="Registrarse">
-            Registrarse</button>
+            </a>
+      
+            <a href="#" class="boton">
+                <img src="/src/icons/registrar.png" alt="">
+                <p>Registrarse</p>
+            </a>
+       
     </div>
 
-    <nav class="menu">
-        <a href="">Principal</a>
-        <a href="">Tienda</a>
-        <a href="">Solicitar Cita</a>
-        <a href="">Nosotros</a>
-        <a href="">
-            <div class="iconoCarrito">
-                <img src="/src/icons/carritoBlanco.png" alt="">
-            </div>  
+   </header>
+
+   <nav class="menu">
+        <a href="#">Principal</a>
+        <a href="#">Tienda</a>
+        <a href="#">Solicitar Cita</a>
+        <a href="#">Nosotros</a>
+        <a href="#">
+            <img src="/src/icons/carritoBlanco.png" alt="">
         </a>
     </nav>
-   </header>
-     
-   </div>
-
-    <!-- <img src="\src\images\Imagenes-Slider1.jpg"> -->
+   
+    <section class="slider-container">
+        <img src="/src/images/Imagenes-Slider1.jpg" alt="" style="width: 100%;">
+    </section>
 
     <!-- en la parte inferior izquierda del slider irán unos botones para seleccionar
     la imagen del slider, son unas patitas -->
     
 
-    <section class="containerCita">
+    <form action="#" class="form">
+        <h1>Solicite Cita Para Su Mascota</h1>
+        
+        <div class="conteiner">
 
-        <h1 class="tituloCita">Solicitar Cita Para Su mascota</h1>
+            <div class="form-container">
 
-        <form action="" class="cita">
-            <h3 class="subtitulosCita">Dueño</h3>
+                <div class="form-group">
+                    <h3>Dueño</h3>
+                    <input type="text" placeholder="Nombre" class="campo">
+                    <input type="text" placeholder="Apellido" class="campo">
+                    <input type="text" placeholder="Correo Electronico" class="campo">
+                    <input type="text" placeholder="Numero de Celular" class="campo">
+                </div>
 
-            <div class="campos">
-                
+                <div class="form-group">
+                    <h3>Mascota</h3>
+                    <input type="text" placeholder="Nombre de la Mascota" class="campo1">
+                    <input type="text" placeholder="Edad de la Mascota"class="campo1" >
+                    <select name="" id="" class="campo1" >
+                        <option value="">Tipo de Mascota</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3>Sobre la Cita</h3>
+                    <select name="" id="" class="campo2" >
+                        <option value="">Motivo de la Cita</option>
+                    </select>
+                    <input type="datetime" value="Fecha y Hora de Preferencia" name="" id="" class="campo2">
+                    
+                </div>
+            </div>
+            
+            <div class="imagen-boton">
+                <img src="/src/icons/iconosApartarCita/veterinariaDegradada.png" alt="">
+                <a href="#inicio" class="boton-simple">Pedir Cita</a>
+            </div>
+        </div>
+    
+    </form>
+
+    <section class="services">
+        <h2>Servicios</h2>
+
+        <p class="text-service">Salud y felicidad bajo un mismo techo <br>
+        ¡Cuidamos de tu mascota como si fuera la nuestra!</p>
+
+        <div class="services-conteiner">
+            <div class="service">
+                <img src="/src/icons/servicios/pataCorazon.png" alt="">
+                <p>Rehabilitación y<br>Fisioterapia</p>
             </div>
 
-            <div class="campos">
-
+            <div class="service">
+                <img src="/src/icons/servicios/hospital.png" alt="">
+                <p>Hospitalización</p>
             </div>
 
-            <div class="campos">
-
+            <div class="service">
+                <img src="/src/icons/servicios/pataCorazon.png" alt="">
+                <p>Diagnosticos por<br>Imagen y Análisis<br>Clinico</p>
             </div>
 
-            <div class="campos">
+            <div class="service">
+                <img src="/src/icons/servicios/veterinario.png" alt="">
+                <p>Servicios de Prevención</p>
+            </div> 
 
+            <div class="service">
+                <img src="/src/icons/servicios/calendario.png" alt="">
+                <p>Coonsultas Veterinarias</p>
             </div>
-            <input type="text" class="campoNombre">
-            <input type="text" class="campoApellido">
-            <input type="text" class="campoCorreo">
-            <input type="text" class="campoCelular">
 
-            <h3 class="subtitulosCita">Mascota</h3>
-            <input type="text" class="campoNombreMascota">
-            <input type="text" class="campoEdadMascota">
-            <select class="campoTipoMascota">
-                <option value="">Tipo de Mascota</option>
-               
-            </select>
-
-
-
-
-        </form>
-
-
-        <h3 class="subtitulosCita">Mascota</h3>
-        <h3 class="subtitulosCita">Sobre La Cita</h3>
-
+            <div class="service">
+                <img src="/src/icons/servicios/aguja.png" alt="">
+                <p>Medicina Preventiva</p>
+            </div>
+        </div>
     </section>
-
-    <!-- Aqui va un formulario donde se piden los datos del dueño y la mascota para el apartado
-    de APARTAR CITA -->
-
-   
-
-    <!-- debajo de la foto de la mujer en el apartado de apartar cita, va un botón para
-    después de llenar el formulario, apartar la cita -->
 
 
     <!-- A continuación va el pie de pagina -->
-
   
-
+    <footer>
         
+        <div class="footer-conteiner">
+            
+            <div class="logo-footer">
+                <img src="/src/images/logoBordeBlanco.png" alt="">
+            </div>
+        
+            <div class="horario">
+                <h4>Horario</h4>
+                <p>Lunes - Viernes<br>07:45 - 09:00PM</p>
+                <p>Sábados - Domingos<br>08:30AM - 08:PM</p>
+            </div>
 
-    
+            <div class="contactos">
+                <h4>Contactos</h4>
+                <div class="telefono-conteiner">
+                    <img src="/src/icons/telefonoBlanco.png" alt="">
+                    <p>3006045694</p>
+                </div>
+                <div class="correo-conteiner">
+                    <img src="/src/icons/emailBlanco.png" alt="">
+                    <p>vetandpets@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="redes-sociales">
+                <h4>Redes Sociales</h4>
+                <div class="redes">
+                    <img src="/src/icons/facebook.png" alt="">
+                    <img src="/src/icons/instagram.png" alt="">
+                    <img src="/src/icons/X.png" alt="">
+                    <img src="/src/icons/whatsapp.png" alt="">
+                    <img src="/src/icons/youtube.png" alt="">
+                </div>
+            </div>
+
+            <div class="mapa">
+                <img src="/src/images/mapa.png" alt="">
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 </html>
